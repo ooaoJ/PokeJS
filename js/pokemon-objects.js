@@ -20,7 +20,7 @@ class Pokemon{
         }else{
             alvo.hp -= ataque_lista.dano - alvo.spDef
         }
-        console.log(`HP do alvo dpois ${alvo.hp}`)
+        console.log(`HP do alvo depois ${alvo.hp}`)
     }
 }
 
