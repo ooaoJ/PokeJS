@@ -1,5 +1,5 @@
 
-![Project Logo](image.png)
+![Project Logo](assets/images/image.png)
 # English:
 ## PokeJS is a game made in JavaScript, a recreation similar to the well-known Pokémon Fire-Red, developed by beginner developers.
 
