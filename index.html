@@ -4,15 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
     <title>PokeJS | Home</title>
 </head>
 <body>
+    <div class="music">
+        <audio id="music" src="assets/audio/videoplayback.mp3" loop></audio>
+    </div>
+    <div class="audio">
+        <i id="musicButton" class="fa-solid fa-volume-xmark" onclick="music()"></i>
+    </div>
     <div class="background">
         <div class="root">
-            <img src="assets/images/image.png" alt="Imagem POKEJS">
+            <img src="assets/images/image.png" alt="Imagem POKEJS" class="move">
             <button id="buttonPlay">START</button>
             <p id="copyright">&copy; 2024 - PokeJS game</p>
         </div>
     </div>
+    <script src="js/audio.js"></script>
 </body>
 </html>

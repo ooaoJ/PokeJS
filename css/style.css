@@ -1,12 +1,13 @@
-*{
+* {
     margin: 0;
     padding: 0;
+    user-select: none;
 }
-body{
+body {
     width: 100vw;
     height: 100vh;
 }
-.background{
+.background {
     width: 100%;
     height: 100%;
     display: flex;
@@ -16,18 +17,22 @@ body{
     background-size: cover;
     background-position: center;
 }
-.root{
+.root {
     display: flex;
     flex-direction: column;
     height: 60%;
     align-items: center;
 }
-.root img{
+.root img {
     position: relative;
     left: -80px;
     margin-bottom: 50px;
+    transition: transform 0.6s;
 }
-.root button{
+.root img:hover {
+    transform: scale(1.1);
+}
+.root button {
     margin-bottom: 50px;
     width: 200px; 
     height: 60px;
@@ -39,8 +44,36 @@ body{
     border: 4px solid #5669A5;
     color: #5669A5;
     box-shadow: 0px 8px 0px #FCD24F;
+    transition: transform 0.5s;
 }
-.root p{
+.root button:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.root p {
     margin-top: 50px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.audio {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    font-size: 24px;
+    color: #fff;
+    cursor: pointer;
+}
+.audio:hover i {
+    transform: scale(1.2);
+    transition: transform 0.5s;
+}
+.move {
+    animation: moving 2s ease infinite;
+}
+@keyframes moving {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-25px);
+    }
 }
