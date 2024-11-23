@@ -10,3 +10,5 @@
 ## PokeJS é um jogo feito com JavaScript, uma recriação similar Pokémon Fire-Red que conhecemos, feito por desenvolvedores iniciantes.
 
 ##### O projeto visa desenvolver um jogo semelhante ao Pokémon Fire-Red, onde o jogador pode anter pelo mapa com diversos cenários, NPCs interativos, missões e uma história interessante para entreter o jogador.
+
+##### teste
