@@ -7,6 +7,10 @@ body {
     width: 100vw;
     height: 100vh;
 }
+ul {
+    list-style: none; 
+     
+}
 .backgroundImage{
     position: absolute;
     width: 100%;
@@ -113,3 +117,93 @@ body {
         height: 40px;
     }
 }
+/* Batalha */
+.dialog_batalha{
+    width: 70vw;
+    height: 40vw;
+    margin: auto;
+    background-color: #C6FFD9;
+    display: flex;
+    flex-direction: column;
+    border: none;
+}
+#barra-acoes{
+    box-sizing: border-box; 
+    display: flex;
+    justify-content: end; 
+    width: 100%;
+    height: 35%;
+    border: 5px solid white; 
+    box-shadow: 0 0 0 3px #434343; 
+    background-color:#5E99FF;
+    
+}
+
+#acoes{
+    border-left:5px solid black ;
+    width: 40%;
+    height: 100%;
+    background-color: #2F7CFE;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#div1{
+    width: 95%;
+    height: 85%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.menu-esquerdo li{
+    margin: 5px 0;
+    font-size: 18px;
+    text-align: left;
+}
+.menu-direito li{
+    margin: 5px 0; 
+    font-size: 18px;
+    text-align: left;
+}
+#oponente{
+    width: 100%;
+    height: 50%;
+}
+#user{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: end;
+
+}
+#pokemon-espaco{ 
+    display: flex;
+    align-items: center;      
+    justify-content: center;    
+    position: absolute;
+    bottom: 30%;
+    left: 10%;
+    width: 23%;                  
+    height: 10%;                 
+}
+#pokemon-sprite {
+    display: flex;
+    align-items: end;      
+    justify-content: center;    
+    position: absolute;
+    bottom: 20%;
+    left: 10%;
+    width: 23%;                  
+    height: 10%;                 
+    border-radius: 50%;        
+    border: 5px solid #B4CCBC; 
+}
+
+#sprites {
+    width: 400%;    
+    z-index: 10;            
+    height: 400%;              
+}
+
+/* Batalha */
