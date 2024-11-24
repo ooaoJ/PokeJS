@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Batlaha-pokemon-teste</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <style>
+        body,html{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: rgb(51, 50, 50);
+        }
+    </style>
+</head>
+<body>
+    <button onclick="openDialog()">Abrir dialog</button>
+
+    <dialog id="Dialog" class="dialog_batalha">
+        <section id="oponente"></section>
+        <section id="user">
+            <section class="sprites">
+                <div id="pokemon-espaco">
+                </div>
+                <div id="pokemon-sprite">
+                </div>
+            </section>
+            
+            <div id="comentarios">
+            
+            </div>
+            <div id="barra-acoes">
+                <section id="acoes" class="acoes">
+                    <div id="div1">
+                        <div>
+                            <ul class="menu-esquerdo">
+                                <li>FIGHT</li>
+                                <li>POKÉMON</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <ul class="menu-direito">
+                                <li>BAG</li>
+                                <li>RUN</li>
+                            </ul>
+                        </div>
+                          
+                    </div>
+                </section>
+            </div>
+
+        </section>
+           
+    </dialog>
+    <script src="./js/pokemon-objects.js"></script>
+</body>
+</html>
