@@ -1,5 +1,6 @@
 class Pokemon{
-    constructor(nome, tipo, hp, atq, def, spAtq, spDef, velocidade,ataques_usaveis) {
+    constructor(sprite,nome, tipo, hp, atq, def, spAtq, spDef, velocidade,ataques_usaveis) {
+        this.sprite = sprite;
         this.nome = nome;       
         this.tipo = tipo;        
         this.hp = hp;           
@@ -24,8 +25,58 @@ class Pokemon{
     }
 }
 
-const charmander = new Pokemon("Charmander", "Fogo", 39, 52, 43, 60, 50, 65, [{nome: 'arranhão',tipo:'fisico',dano: 25}]);
-const pidgey = new Pokemon("Pidgey","Voador",40,45,40,35,35,56)
+function render_sprite(pokemon){
+    let div_html = document.getElementById('pokemon-espaco')
+    lista = ``;
+    lista = pokemon.sprite
+    div_html.innerHTML += `<img id="sprites" src="${lista}" alt="${pokemon.nome}">`
+}
 
 
-charmander.atacar(pidgey)
+
+const charmander = new Pokemon("https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/4.png",
+"Charmander", "Fogo", 39, 52, 43, 60, 50, 65, [{nome: 'arranhão',tipo:'fisico',dano: 25}]);
+
+
+const venussaur = new Pokemon("https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/3.png",
+"Charmander", "Fogo", 39, 52, 43, 60, 50, 65, [{nome: 'arranhão',tipo:'fisico',dano: 25}]);
+
+const bulbasaur = new Pokemon(
+    "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/1.png",
+    "Bulbasaur",
+    "Planta/Veneno",
+    45,
+    49,
+    49,
+    65,
+    65,
+    45,
+    [{ nome: "Chicote de Vinha", tipo: "fisico", dano: 30 }]
+);
+
+const squirtle = new Pokemon(
+    "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/7.png",
+    "Squirtle",
+    "Água",
+    44,
+    48,
+    65,
+    50,
+    64,
+    43,
+    [{ nome: "Jato d'Água", tipo: "especial", dano: 40 }]
+);
+
+
+//dialog
+const dialog = document.getElementById("Dialog");
+
+function openDialog() {
+    dialog.showModal();
+}
+
+function closeDialog() {
+    dialog.close();
+}
+//dialog
+render_sprite(venussaur)
