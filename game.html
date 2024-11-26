@@ -1,0 +1,37 @@
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mapa com Canvas</title>
+        <style>
+            @font-face {
+                font-family: 'Pokemon_Font';
+                src: url('assets/fonts/pokemon-firered-leafgreen-font-recreation.ttf') format('truetype');
+            }
+
+            * {
+                margin: 0;
+                padding: 0;
+                font-family: 'Pokemon_Font';
+                color: #fff;
+            }
+
+            body {
+                width: 100%;
+                height: 100%;
+                background-color: #333;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        </style>
+    </head>
+
+    <body>
+        <canvas id="gameCanvas" width="920px" height="920px"></canvas>
+        <script src="js/pallet.js"></script>
+    </body>
+
+    </html>
