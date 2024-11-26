@@ -31,6 +31,13 @@ function render_sprite(pokemon){
     lista = pokemon.sprite
     div_html.innerHTML += `<img id="sprites" src="${lista}" alt="${pokemon.nome}">`
 }
+function render_sprite_oponent(pokemon){
+    let div_html = document.getElementById('pokemon-espaco-op')
+    lista = ``;
+    lista = pokemon.sprite
+    div_html.innerHTML += `<img id="sprites" src="${lista}" alt="${pokemon.nome}">`
+}
+
 
 
 
@@ -38,34 +45,11 @@ const charmander = new Pokemon("https://raw.githubusercontent.com/PokeAPI/sprite
 "Charmander", "Fogo", 39, 52, 43, 60, 50, 65, [{nome: 'arranhão',tipo:'fisico',dano: 25}]);
 
 
-const venussaur = new Pokemon("https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/3.png",
+const venussaur = new Pokemon("https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/9.png",
 "Charmander", "Fogo", 39, 52, 43, 60, 50, 65, [{nome: 'arranhão',tipo:'fisico',dano: 25}]);
 
-const bulbasaur = new Pokemon(
-    "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/1.png",
-    "Bulbasaur",
-    "Planta/Veneno",
-    45,
-    49,
-    49,
-    65,
-    65,
-    45,
-    [{ nome: "Chicote de Vinha", tipo: "fisico", dano: 30 }]
-);
 
-const squirtle = new Pokemon(
-    "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/7.png",
-    "Squirtle",
-    "Água",
-    44,
-    48,
-    65,
-    50,
-    64,
-    43,
-    [{ nome: "Jato d'Água", tipo: "especial", dano: 40 }]
-);
+const squirtle = new Pokemon("https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/134.png","Squirtle","Água",44,48,65,50,64,43,[{ nome: "Jato d'Água", tipo: "especial", dano: 40 }]);
 
 
 //dialog
@@ -80,3 +64,4 @@ function closeDialog() {
 }
 //dialog
 render_sprite(venussaur)
+render_sprite_oponent(squirtle)
