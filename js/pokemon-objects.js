@@ -45,7 +45,7 @@ const charmander = new Pokemon("https://raw.githubusercontent.com/PokeAPI/sprite
 "Charmander", "Fogo", 39, 52, 43, 60, 50, 65, [{nome: 'arranhão',tipo:'fisico',dano: 25}]);
 
 
-const venussaur = new Pokemon("https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/9.png",
+const venussaur = new Pokemon("https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/3.png",
 "Charmander", "Fogo", 39, 52, 43, 60, 50, 65, [{nome: 'arranhão',tipo:'fisico',dano: 25}]);
 
 

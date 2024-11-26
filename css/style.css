@@ -128,6 +128,7 @@ ul {
     border: none;
 }
 #barra-acoes{
+    z-index: 10;
     box-sizing: border-box; 
     display: flex;
     justify-content: end; 
@@ -182,7 +183,7 @@ ul {
     align-items: center;      
     justify-content: center;    
     position: absolute;
-    bottom: 30%;
+    bottom: 20%;
     left: 10%;
     width: 23%;                  
     height: 10%;                 
@@ -190,14 +191,16 @@ ul {
 #pokemon-sprite {
     display: flex;
     align-items: end;      
-    justify-content: center;    
+    justify-content: center;
+    background-image: url("../assets/images/grama-user.png");
+    background-size: cover;
+    background-position: center left;
     position: absolute;
-    bottom: 20%;
-    left: 10%;
-    width: 23%;                  
+    bottom: 15%;
+    left: 3%;
+    width: 43%;                  
     height: 10%;                 
     border-radius: 50%;        
-    border: 5px solid #B4CCBC; 
 }
 
 #sprites {
@@ -217,16 +220,18 @@ ul {
     height: 10%;                 
 }
 #pokemon-sprite-op {
+    background-image: url("../assets/images/chao.png");
+    background-size: cover;
+    background-position: 0 -20px;
     display: flex;
     align-items: end;      
     justify-content: center;    
     position: absolute;
-    bottom: 70%;
-    left: 65%;
-    width: 23%;                  
-    height: 10%;                 
+    bottom: 67%;
+    left: 60%;
+    width: 30%;                  
+    height: 13%;                 
     border-radius: 50%;        
-    border: 5px solid #B4CCBC; 
 }
 
 #sprites-op {
