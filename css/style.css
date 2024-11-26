@@ -206,4 +206,32 @@ ul {
     height: 400%;              
 }
 
+#pokemon-espaco-op{ 
+    display: flex;
+    align-items: center;      
+    justify-content: center;    
+    position: absolute;
+    bottom: 78%;
+    left: 65%;
+    width: 23%;                  
+    height: 10%;                 
+}
+#pokemon-sprite-op {
+    display: flex;
+    align-items: end;      
+    justify-content: center;    
+    position: absolute;
+    bottom: 70%;
+    left: 65%;
+    width: 23%;                  
+    height: 10%;                 
+    border-radius: 50%;        
+    border: 5px solid #B4CCBC; 
+}
+
+#sprites-op {
+    width: 400%;    
+    z-index: 10;            
+    height: 400%;              
+}
 /* Batalha */
