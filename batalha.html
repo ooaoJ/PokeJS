@@ -17,6 +17,16 @@
             background-size: cover;
             background-position: 0 -100px;
         }
+        @font-face {
+            font-family: "Pokefont";
+            src: url('./assets/fonts/pokemon-firered-leafgreen-font-recreation.ttf');
+        }
+        *{
+            font-family: "Pokefont";
+        }
+        .opcao-acoes{
+            cursor: pointer;    
+        }
     </style>
 </head>
 <body>
@@ -50,14 +60,14 @@
                     <div id="div1">
                         <div>
                             <ul class="menu-esquerdo">
-                                <li>FIGHT</li>  
-                                <li>POKÉMON</li>
+                                <li class="opcao-acoes">FIGHT</li>  
+                                <li class="opcao-acoes">POKÉMON</li>
                             </ul>
                         </div>
                         <div>
                             <ul class="menu-direito">
-                                <li>BAG</li>
-                                <li>RUN</li>
+                                <li class="opcao-acoes">BAG</li>
+                                <li class="opcao-acoes">RUN</li>
                             </ul>
                         </div>
                           
