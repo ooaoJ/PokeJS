@@ -196,26 +196,35 @@ ul {
     background-size: cover;
     background-position: center left;
     position: absolute;
-    bottom: 15%;
+    bottom: 13%;
     left: 3%;
     width: 43%;                  
     height: 10%;                 
     border-radius: 50%;        
 }
-
 #sprites {
-    width: 400%;    
+    width: 500%;    
     z-index: 10;            
-    height: 400%;              
+    height: 500%;              
 }
-
+.pokemon-detail{
+    width: 35%;
+    height: 23%;
+    background-color: #F5F9D6;
+    border-radius: 20px 0 20px 0;
+    border: 3px solid #26430C;
+    box-shadow: 0 0 0 2px #57735F;
+    position: absolute;
+    bottom: 20%;
+    left: 60%;
+}
 #pokemon-espaco-op{ 
     display: flex;
     align-items: center;      
     justify-content: center;    
     position: absolute;
-    bottom: 78%;
-    left: 65%;
+    bottom: 70%;
+    left: 68%;
     width: 23%;                  
     height: 10%;                 
 }
@@ -227,8 +236,8 @@ ul {
     align-items: end;      
     justify-content: center;    
     position: absolute;
-    bottom: 67%;
-    left: 60%;
+    bottom: 58%;
+    left: 63%;
     width: 30%;                  
     height: 13%;                 
     border-radius: 50%;        
