@@ -35,7 +35,7 @@ function render_sprite_oponent(pokemon){
     let div_html = document.getElementById('pokemon-espaco-op')
     lista = ``;
     lista = pokemon.sprite
-    div_html.innerHTML += `<img id="sprites" src="${lista}" alt="${pokemon.nome}">`
+    div_html.innerHTML += `<img id="sprites-op" src="${lista}" alt="${pokemon.nome}">`
 }
 
 
