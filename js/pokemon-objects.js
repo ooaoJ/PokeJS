@@ -1,8 +1,9 @@
 class Pokemon{
-    constructor(sprite,nome, tipo, hp, atq, def, spAtq, spDef, velocidade,ataques_usaveis) {
+    constructor(sprite,nome, tipo,tipo2, hp, atq, def, spAtq, spDef, velocidade,ataques_usaveis) {
         this.sprite = sprite;
         this.nome = nome;       
-        this.tipo = tipo;        
+        this.tipo = tipo;
+        this.tipo2 = tipo2;        
         this.hp = hp;           
         this.atq = atq;         
         this.def = def;          
@@ -42,15 +43,14 @@ function render_sprite_oponent(pokemon){
 
 
 const charmander = new Pokemon("https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/4.png",
-"Charmander", "Fogo", 39, 52, 43, 60, 50, 65, [{nome: 'arranhão',tipo:'fisico',dano: 25}]);
+"Charmander", "Fogo",'null', 39, 52, 43, 60, 50, 65, [{nome: 'arranhão',tipo:'fisico',dano: 25}]);
 
 
-const venussaur = new Pokemon("https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/3.png",
-"Charmander", "Fogo", 39, 52, 43, 60, 50, 65, [{nome: 'arranhão',tipo:'fisico',dano: 25}]);
+const venussaur = new Pokemon("https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/shiny/3.png","Venussaur", "Grama","Veneno", 80, 82, 83, 100, 100, 80, [{nome: 'arranhão',tipo:'fisico',dano: 25}]);
 
 
-const squirtle = new Pokemon("https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/134.png","Squirtle","Água",44,48,65,50,64,43,[{ nome: "Jato d'Água", tipo: "especial", dano: 40 }]);
-
+const wartortle = new Pokemon("https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/8.png","Squirtle","Água",
+59,63,80,65,80,58,[{ nome: "Jato d'Água", tipo: "especial", dano: 40 }]);
 
 //dialog
 const dialog = document.getElementById("Dialog");
@@ -63,5 +63,17 @@ function closeDialog() {
     dialog.close();
 }
 //dialog
-render_sprite(venussaur)
-render_sprite_oponent(squirtle)
+render_sprite_oponent(wartortle)
+
+//Iner batalha
+let Name = document.getElementById('name')
+let hp = document.getElementById('hp')
+function InerPkm(your_pokemom){
+    Name.innerHTML += your_pokemom.nome
+    let hp_pokemon = your_pokemom.hp
+    hp.innerHTML += hp_pokemon
+    render_sprite(your_pokemom)
+
+}
+InerPkm(charmander)
+//Iner batalha
