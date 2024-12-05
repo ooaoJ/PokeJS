@@ -176,7 +176,6 @@ ul {
     height: 50%;
     display: flex;
     align-items: end;
-
 }
 #pokemon-espaco{ 
     display: flex;
@@ -205,26 +204,33 @@ ul {
 #sprites {
     width: 500%;    
     z-index: 10;            
-    height: 500%;              
+    height: 500%; 
+    animation: spritesAnimation 2s ease-in infinite;            
+            
 }
-.pokemon-detail{
+.pokemon-detail {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
     width: 35%;
-    height: 23%;
+    height: 20%;
     background-color: #F5F9D6;
     border-radius: 20px 0 20px 0;
     border: 3px solid #26430C;
     box-shadow: 0 0 0 2px #57735F;
     position: absolute;
-    bottom: 20%;
+    z-index: 15; 
+    bottom: 21%;
     left: 60%;
 }
+
 #pokemon-espaco-op{ 
     display: flex;
     align-items: center;      
     justify-content: center;    
     position: absolute;
-    bottom: 70%;
-    left: 68%;
+    bottom: 67%;
+    left: 66%;
     width: 23%;                  
     height: 10%;                 
 }
@@ -242,10 +248,47 @@ ul {
     height: 13%;                 
     border-radius: 50%;        
 }
-
 #sprites-op {
-    width: 400%;    
+    width: 300%;    
     z-index: 10;            
-    height: 400%;              
+    height: 300%; 
+
+}
+@keyframes spritesAnimation {
+    0% {
+        transform: translateY(0);
+    }
+    25% {
+        transform: translateY(3px);
+    }
+    50% {
+        transform: translateY(0);
+    }
+    75% {
+        transform: translateY(-3px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.borda-detail{
+    width: 37%;
+    height: 80px;
+    position: absolute;
+    bottom: 18.5%;
+    left: 59%;
+    background-color: #434343;
+    border-bottom-right-radius: 15px ;
+    border-top-right-radius: 5px;
+    border-top-left-radius:20px ;
+}
+.name{
+    width: 100%;
+    height: 30%;
+}
+.hp{
+    width: 100%;
+    height: 70%;
 }
 /* Batalha */
