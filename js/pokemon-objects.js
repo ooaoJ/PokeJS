@@ -75,5 +75,5 @@ function InerPkm(your_pokemom){
     render_sprite(your_pokemom)
 
 }
-InerPkm(charmander)
+InerPkm(venussaur)
 //Iner batalha
